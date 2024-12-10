@@ -1,0 +1,8 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <div class="row col-lg-12">
+    <product-list class="col-lg-6" (productAdded)="addProductToCart($event)" (productRemoved)="removeProduct($event)" [products]="productList"></product-list>
+    <shopping-cart class="col-lg-6" [products]="cartProductList" (productRemoved)="removeProduct($event)">
+    </shopping-cart>
+  </div>
+</div>

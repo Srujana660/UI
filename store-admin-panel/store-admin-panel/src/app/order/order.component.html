@@ -1,0 +1,19 @@
+
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr >
+          <th scope="col">#</th>
+          <th scope="col">Product123</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of Orders">
+          <td>{{order.orderNumber}}</td>
+          <td>{{order.product.name}}</td>
+          <td>{{order.quantity}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
