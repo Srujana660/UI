@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // function submitclick()
+    // {
+    //     document.getElementById("result").innerHTML=document.getElementById("inpfirstname").value
+    // }
+    function checkboxclick(test)
+    {
+        if(test.target.checked==true)
+    {
+        document.getElementById("result").innerHTML=document.getElementById("inpfirstname").value
+    }
+    else
+    {
+        document.getElementById("result").innerHTML=""
+    }
+    }
+
+</script>
+<body>
+    <label id="lblfirstname"for="firstname">firstname</label>
+    <input id="inpfirstname" type="text" name="firstname" placeholder="firstname">
+    <input type="checkbox" name="checkbox" id="checkbox" onchange="checkboxclick(event)">
+    <!-- <button onclick="submitclick()">submit</button> -->
+    <label id=result for="result"></label>
+    <label for=""></label>
+    
+</body>
+</html>
